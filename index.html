@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Cuidados Pessoais</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Saúde e Cuidados Pessoais</h1>
+        <p>Bem-vindo ao site que vai te ajudar a melhorar sua saúde e bem-estar!</p>
+    </header>
+
+    <nav id="menu">
+        <button class="hamburger" onclick="toggleMenu()">☰ Menu</button>
+        <ul id="menu-list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#alimentacao">Alimentação</a></li>
+            <li><a href="#exercicios">Exercícios</a></li>
+            <li><a href="#saude-mental">Saúde Mental</a></li>
+            <li><a href="#calculadora-imc">Calculadora IMC</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2>Sobre o site</h2>
+        <p>Aqui você encontra informações sobre hábitos saudáveis, incluindo alimentação, exercícios e cuidados com a saúde mental.</p>
+    </section>
+
+    <section id="alimentacao">
+        <h2>Alimentação Saudável</h2>
+        <p>Dicas de como manter uma dieta equilibrada e informações sobre nutrientes.</p>
+        <ul>
+            <li>Consuma uma variedade de alimentos, incluindo frutas, vegetais, grãos integrais, proteínas magras e gorduras saudáveis.</li>
+            <li>Beba bastante água para manter-se hidratado ao longo do dia.</li>
+            <li>Evite alimentos ultraprocessados e ricos em açúcar, sal e gorduras saturadas.</li>
+            <li>Equilibre a ingestão calórica com as atividades físicas para manter um peso saudável.</li>
+            <li>Prefira cozinhar suas refeições em casa para controlar melhor os ingredientes e as porções.</li>
+            <li>Inclua alimentos ricos em fibras, como frutas, vegetais e cereais integrais, para ajudar na digestão.</li>
+        </ul>
+    </section>
+
+    <section id="exercicios">
+        <h2>Exercícios Físicos</h2>
+        <p>Sugestões de atividades físicas para diferentes perfis de usuários.</p>
+        <ul>
+            <li>Comece com caminhadas diárias de 30 minutos para melhorar a saúde cardiovascular e manter o corpo ativo.</li>
+            <li>Inclua treinos de força, como musculação ou exercícios com peso corporal, para aumentar a massa muscular e melhorar o metabolismo.</li>
+            <li>Pratique alongamentos e exercícios de flexibilidade para prevenir lesões e melhorar a postura.</li>
+            <li>Experimente atividades aeróbicas, como corrida, natação ou ciclismo, para aumentar a resistência e queimar calorias.</li>
+            <li>Encontre atividades que você goste, como dança ou esportes em grupo, para manter-se motivado e tornar o exercício uma parte divertida da rotina.</li>
+            <li>Descanse adequadamente entre os treinos e respeite os limites do seu corpo para evitar o overtraining.</li>
+        </ul>
+    </section>
+    
+    <section id="saude-mental">
+        <h2>Saúde Mental</h2>
+        <p>Estrategias para cuidar da saúde mental e promover o bem-estar emocional.</p>
+        <ul>
+            <li>Pratique meditação ou mindfulness diariamente para reduzir o estresse e aumentar o foco.</li>
+            <li>Desenvolva uma rotina de sono saudável, dormindo de 7 a 9 horas por noite para restaurar a energia física e mental.</li>
+            <li>Converse com amigos ou familiares regularmente para manter conexões sociais e receber apoio emocional.</li>
+            <li>Faça atividades que você gosta, como ler, pintar ou ouvir música, para relaxar e se reconectar com seus interesses.</li>
+            <li>Estabeleça limites e aprenda a dizer "não" quando necessário, para evitar a sobrecarga de compromissos e o esgotamento mental.</li>
+            <li>Considere procurar ajuda profissional se estiver se sentindo ansioso, deprimido ou sobrecarregado, como terapia ou aconselhamento psicológico.</li>
+        </ul>
+    </section>
+    
+
+    <section id="calculadora-imc">
+        <h2>Calculadora de IMC</h2>
+        <div class="calculadora-container">
+            <label for="peso">Peso (kg): </label>
+            <input type="number" id="peso" placeholder="Ex: 70">
+    
+            <label for="altura">Altura (m): </label>
+            <input type="number" step="0.01" id="altura" placeholder="Ex: 1.75">
+    
+            <button onclick="calcularIMC()">Calcular IMC</button>
+        </div>
+        <p id="resultado"></p>
+    </section>
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
